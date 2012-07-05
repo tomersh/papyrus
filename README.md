@@ -1,4 +1,4 @@
 papyrus
 =======
 
-Protocol driven framework for automatic ViewController loading and rendering for iPhone apps.
+Protocol driven framework for automatic loading and rendering of ViewControllers for iPhone apps.
