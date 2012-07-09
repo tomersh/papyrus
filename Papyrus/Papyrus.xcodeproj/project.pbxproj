@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D85CF56815AB44CC002FE1BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85CF56715AB44CC002FE1BE /* UIKit.framework */; };
+		D85CF56A15AB44CC002FE1BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85CF56915AB44CC002FE1BE /* Foundation.framework */; };
+		D85CF56C15AB44CC002FE1BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85CF56B15AB44CC002FE1BE /* CoreGraphics.framework */; };
+		D85CF57215AB44CC002FE1BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D85CF57015AB44CC002FE1BE /* InfoPlist.strings */; };
+		D85CF57415AB44CC002FE1BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D85CF57315AB44CC002FE1BE /* main.m */; };
+		D85CF58015AB44CC002FE1BE /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85CF57F15AB44CC002FE1BE /* SenTestingKit.framework */; };
+		D85CF58115AB44CC002FE1BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85CF56715AB44CC002FE1BE /* UIKit.framework */; };
+		D85CF58215AB44CC002FE1BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85CF56915AB44CC002FE1BE /* Foundation.framework */; };
+		D85CF58A15AB44CC002FE1BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D85CF58815AB44CC002FE1BE /* InfoPlist.strings */; };
+		D85CF58D15AB44CC002FE1BE /* PapyrusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D85CF58C15AB44CC002FE1BE /* PapyrusTests.m */; };
+		D85CF59A15AB4518002FE1BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D85CF59915AB4518002FE1BE /* AppDelegate.m */; };
+		D85CF5AF15AB45A6002FE1BE /* ProtocolBasedViewControllerInstantiator.m in Sources */ = {isa = PBXBuildFile; fileRef = D85CF5AB15AB45A6002FE1BE /* ProtocolBasedViewControllerInstantiator.m */; };
+		D85CF5B015AB45A6002FE1BE /* ProtocolLocator.m in Sources */ = {isa = PBXBuildFile; fileRef = D85CF5AE15AB45A6002FE1BE /* ProtocolLocator.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D85CF58315AB44CC002FE1BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D85CF55A15AB44CC002FE1BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D85CF56215AB44CC002FE1BE;
+			remoteInfo = Papyrus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D85CF56315AB44CC002FE1BE /* Papyrus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Papyrus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D85CF56715AB44CC002FE1BE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D85CF56915AB44CC002FE1BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D85CF56B15AB44CC002FE1BE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D85CF56F15AB44CC002FE1BE /* Papyrus-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Papyrus-Info.plist"; sourceTree = "<group>"; };
+		D85CF57115AB44CC002FE1BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D85CF57315AB44CC002FE1BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D85CF57515AB44CC002FE1BE /* Papyrus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Papyrus-Prefix.pch"; sourceTree = "<group>"; };
+		D85CF57E15AB44CC002FE1BE /* PapyrusTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PapyrusTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D85CF57F15AB44CC002FE1BE /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		D85CF58715AB44CC002FE1BE /* PapyrusTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PapyrusTests-Info.plist"; sourceTree = "<group>"; };
+		D85CF58915AB44CC002FE1BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D85CF58B15AB44CC002FE1BE /* PapyrusTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PapyrusTests.h; sourceTree = "<group>"; };
+		D85CF58C15AB44CC002FE1BE /* PapyrusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PapyrusTests.m; sourceTree = "<group>"; };
+		D85CF59815AB4518002FE1BE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D85CF59915AB4518002FE1BE /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D85CF5AA15AB45A6002FE1BE /* ProtocolBasedViewControllerInstantiator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolBasedViewControllerInstantiator.h; sourceTree = "<group>"; };
+		D85CF5AB15AB45A6002FE1BE /* ProtocolBasedViewControllerInstantiator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtocolBasedViewControllerInstantiator.m; sourceTree = "<group>"; };
+		D85CF5AC15AB45A6002FE1BE /* ProtocolBasedViewControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolBasedViewControllerProtocol.h; sourceTree = "<group>"; };
+		D85CF5AD15AB45A6002FE1BE /* ProtocolLocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolLocator.h; sourceTree = "<group>"; };
+		D85CF5AE15AB45A6002FE1BE /* ProtocolLocator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtocolLocator.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D85CF56015AB44CC002FE1BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D85CF56815AB44CC002FE1BE /* UIKit.framework in Frameworks */,
+				D85CF56A15AB44CC002FE1BE /* Foundation.framework in Frameworks */,
+				D85CF56C15AB44CC002FE1BE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D85CF57A15AB44CC002FE1BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D85CF58015AB44CC002FE1BE /* SenTestingKit.framework in Frameworks */,
+				D85CF58115AB44CC002FE1BE /* UIKit.framework in Frameworks */,
+				D85CF58215AB44CC002FE1BE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D85CF55815AB44CC002FE1BE = {
+			isa = PBXGroup;
+			children = (
+				D85CF56D15AB44CC002FE1BE /* Papyrus */,
+				D85CF58515AB44CC002FE1BE /* PapyrusTests */,
+				D85CF56615AB44CC002FE1BE /* Frameworks */,
+				D85CF56415AB44CC002FE1BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D85CF56415AB44CC002FE1BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D85CF56315AB44CC002FE1BE /* Papyrus.app */,
+				D85CF57E15AB44CC002FE1BE /* PapyrusTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D85CF56615AB44CC002FE1BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D85CF56715AB44CC002FE1BE /* UIKit.framework */,
+				D85CF56915AB44CC002FE1BE /* Foundation.framework */,
+				D85CF56B15AB44CC002FE1BE /* CoreGraphics.framework */,
+				D85CF57F15AB44CC002FE1BE /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D85CF56D15AB44CC002FE1BE /* Papyrus */ = {
+			isa = PBXGroup;
+			children = (
+				D85CF59715AB4500002FE1BE /* SampleProject */,
+				D85CF59615AB44FA002FE1BE /* Framework */,
+				D85CF56E15AB44CC002FE1BE /* Supporting Files */,
+			);
+			path = Papyrus;
+			sourceTree = "<group>";
+		};
+		D85CF56E15AB44CC002FE1BE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D85CF56F15AB44CC002FE1BE /* Papyrus-Info.plist */,
+				D85CF57015AB44CC002FE1BE /* InfoPlist.strings */,
+				D85CF57315AB44CC002FE1BE /* main.m */,
+				D85CF57515AB44CC002FE1BE /* Papyrus-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D85CF58515AB44CC002FE1BE /* PapyrusTests */ = {
+			isa = PBXGroup;
+			children = (
+				D85CF58B15AB44CC002FE1BE /* PapyrusTests.h */,
+				D85CF58C15AB44CC002FE1BE /* PapyrusTests.m */,
+				D85CF58615AB44CC002FE1BE /* Supporting Files */,
+			);
+			path = PapyrusTests;
+			sourceTree = "<group>";
+		};
+		D85CF58615AB44CC002FE1BE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D85CF58715AB44CC002FE1BE /* PapyrusTests-Info.plist */,
+				D85CF58815AB44CC002FE1BE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D85CF59615AB44FA002FE1BE /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				D85CF5A215AB4591002FE1BE /* Base */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		D85CF59715AB4500002FE1BE /* SampleProject */ = {
+			isa = PBXGroup;
+			children = (
+				D85CF59815AB4518002FE1BE /* AppDelegate.h */,
+				D85CF59915AB4518002FE1BE /* AppDelegate.m */,
+			);
+			path = SampleProject;
+			sourceTree = "<group>";
+		};
+		D85CF5A215AB4591002FE1BE /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D85CF5AC15AB45A6002FE1BE /* ProtocolBasedViewControllerProtocol.h */,
+				D85CF5AA15AB45A6002FE1BE /* ProtocolBasedViewControllerInstantiator.h */,
+				D85CF5AB15AB45A6002FE1BE /* ProtocolBasedViewControllerInstantiator.m */,
+				D85CF5AD15AB45A6002FE1BE /* ProtocolLocator.h */,
+				D85CF5AE15AB45A6002FE1BE /* ProtocolLocator.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D85CF56215AB44CC002FE1BE /* Papyrus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D85CF59015AB44CC002FE1BE /* Build configuration list for PBXNativeTarget "Papyrus" */;
+			buildPhases = (
+				D85CF55F15AB44CC002FE1BE /* Sources */,
+				D85CF56015AB44CC002FE1BE /* Frameworks */,
+				D85CF56115AB44CC002FE1BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Papyrus;
+			productName = Papyrus;
+			productReference = D85CF56315AB44CC002FE1BE /* Papyrus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D85CF57D15AB44CC002FE1BE /* PapyrusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D85CF59315AB44CC002FE1BE /* Build configuration list for PBXNativeTarget "PapyrusTests" */;
+			buildPhases = (
+				D85CF57915AB44CC002FE1BE /* Sources */,
+				D85CF57A15AB44CC002FE1BE /* Frameworks */,
+				D85CF57B15AB44CC002FE1BE /* Resources */,
+				D85CF57C15AB44CC002FE1BE /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D85CF58415AB44CC002FE1BE /* PBXTargetDependency */,
+			);
+			name = PapyrusTests;
+			productName = PapyrusTests;
+			productReference = D85CF57E15AB44CC002FE1BE /* PapyrusTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D85CF55A15AB44CC002FE1BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = D85CF55D15AB44CC002FE1BE /* Build configuration list for PBXProject "Papyrus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D85CF55815AB44CC002FE1BE;
+			productRefGroup = D85CF56415AB44CC002FE1BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D85CF56215AB44CC002FE1BE /* Papyrus */,
+				D85CF57D15AB44CC002FE1BE /* PapyrusTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D85CF56115AB44CC002FE1BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D85CF57215AB44CC002FE1BE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D85CF57B15AB44CC002FE1BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D85CF58A15AB44CC002FE1BE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D85CF57C15AB44CC002FE1BE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D85CF55F15AB44CC002FE1BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D85CF57415AB44CC002FE1BE /* main.m in Sources */,
+				D85CF59A15AB4518002FE1BE /* AppDelegate.m in Sources */,
+				D85CF5AF15AB45A6002FE1BE /* ProtocolBasedViewControllerInstantiator.m in Sources */,
+				D85CF5B015AB45A6002FE1BE /* ProtocolLocator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D85CF57915AB44CC002FE1BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D85CF58D15AB44CC002FE1BE /* PapyrusTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D85CF58415AB44CC002FE1BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D85CF56215AB44CC002FE1BE /* Papyrus */;
+			targetProxy = D85CF58315AB44CC002FE1BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D85CF57015AB44CC002FE1BE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D85CF57115AB44CC002FE1BE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D85CF58815AB44CC002FE1BE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D85CF58915AB44CC002FE1BE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D85CF58E15AB44CC002FE1BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D85CF58F15AB44CC002FE1BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D85CF59115AB44CC002FE1BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Papyrus/Papyrus-Prefix.pch";
+				INFOPLIST_FILE = "Papyrus/Papyrus-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D85CF59215AB44CC002FE1BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Papyrus/Papyrus-Prefix.pch";
+				INFOPLIST_FILE = "Papyrus/Papyrus-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D85CF59415AB44CC002FE1BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Papyrus.app/Papyrus";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Papyrus/Papyrus-Prefix.pch";
+				INFOPLIST_FILE = "PapyrusTests/PapyrusTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		D85CF59515AB44CC002FE1BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Papyrus.app/Papyrus";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Papyrus/Papyrus-Prefix.pch";
+				INFOPLIST_FILE = "PapyrusTests/PapyrusTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D85CF55D15AB44CC002FE1BE /* Build configuration list for PBXProject "Papyrus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D85CF58E15AB44CC002FE1BE /* Debug */,
+				D85CF58F15AB44CC002FE1BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D85CF59015AB44CC002FE1BE /* Build configuration list for PBXNativeTarget "Papyrus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D85CF59115AB44CC002FE1BE /* Debug */,
+				D85CF59215AB44CC002FE1BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D85CF59315AB44CC002FE1BE /* Build configuration list for PBXNativeTarget "PapyrusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D85CF59415AB44CC002FE1BE /* Debug */,
+				D85CF59515AB44CC002FE1BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D85CF55A15AB44CC002FE1BE /* Project object */;
+}
