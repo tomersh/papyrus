@@ -14,16 +14,14 @@
 static Class* allClassesMemoization = NULL; 
 static int allClassCount;
 
-static NSMutableDictionary* requestMemoization;
-
++(void)initialize {
+    int numClasses = objc_getClassList(NULL, 0);
+    allClassesMemoization = NULL;
+    allClassesMemoization = malloc(sizeof(Class) * numClasses);
+    allClassCount = objc_getClassList(allClassesMemoization, numClasses);
+}
 
 +(NSArray *) getAllClassesByProtocolType:(Protocol*) protocol {
-    if (allClassesMemoization == nil || allClassesMemoization == NULL) {
-        int numClasses = objc_getClassList(NULL, 0);
-        allClassesMemoization = NULL;
-        allClassesMemoization = malloc(sizeof(Class) * numClasses);
-        allClassCount = objc_getClassList(allClassesMemoization, numClasses);
-    }
     NSMutableArray *result = [NSMutableArray array];
     for (NSInteger i = 0; i < allClassCount; i++) {
         if (class_conformsToProtocol(allClassesMemoization[i],protocol))
