@@ -6,8 +6,8 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "GenericTabbedViewController.h"
+#import "PapyrusTabbedViewController.h"
 
-@interface MainTabbedViewController : GenericTabbedViewController
+@interface MainTabbedViewController : PapyrusTabbedViewController
 
 @end

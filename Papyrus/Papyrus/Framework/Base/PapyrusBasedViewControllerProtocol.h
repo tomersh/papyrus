@@ -1,5 +1,5 @@
 //
-//  ProtocolBasedViewControllerProtocol.h
+//  PapyrusBasedViewControllerProtocol.h
 //  Newsfeed
 //
 //  Created by Tomer shiri on 6/26/12.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol ProtocolBasedViewControllerProtocol <NSObject>
+@protocol PapyrusBasedViewControllerProtocol <NSObject>
 
 
 //The position if the UIView in the container.

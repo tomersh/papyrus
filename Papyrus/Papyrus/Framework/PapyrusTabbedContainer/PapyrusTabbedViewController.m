@@ -6,18 +6,18 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "GenericTabbedViewController.h"
+#import "PapyrusTabbedViewController.h"
 #import "ProtocolLocator.h"
-#import "ProtocolBasedViewControllerInstantiator.h"
+#import "PapyrusTabViewControllerProtocol.h"
+#import "PapyrusBasedViewControllerInstantiator.h"
 
-
-@interface GenericTabbedViewController ()
+@interface PapyrusTabbedViewController ()
 
 -(void) setTabImageNamed:(NSString*)imageName withCaption:(NSString*)caption andTag:(int)_tag toViewController:(UIViewController*)viewController;
 
 @end
 
-@implementation GenericTabbedViewController
+@implementation PapyrusTabbedViewController
 
 @synthesize changeTitleToTabName;
 
@@ -32,9 +32,9 @@
     
     changeTitleToTabName = YES;
 
-    viewControllers = [[ProtocolBasedViewControllerInstantiator InstantiateViewControllersOfType:protocols] retain];
+    viewControllers = [[PapyrusBasedViewControllerInstantiator InstantiateViewControllersOfType:protocols] retain];
 	
-    for (UIViewController<ProtocolBasedViewControllerProtocol>* viewController in self.viewControllers) {
+    for (UIViewController<PapyrusBasedViewControllerProtocol>* viewController in self.viewControllers) {
         if ([viewController respondsToSelector:@selector(registerForStatusChangeEvent:andSelector:)]) {
             [viewController registerForViewPropertiesChangeEvent:self andSelector:@selector(refreshTabs)];
         }
@@ -50,19 +50,19 @@
     
     NSMutableArray* visibleTabs = [NSMutableArray array];
     
-    for (UIViewController<TabViewControllerProtocol>* viewController in viewControllers) {
+    for (UIViewController<PapyrusTabViewControllerProtocol>* viewController in viewControllers) {
         if ([viewController tabVisiblityStatus] != TabVisibleStatusNotShowen)
             [visibleTabs addObject:viewController];
     }
     
-    for (UIViewController<TabViewControllerProtocol>* visibleTab in visibleTabs) {
+    for (UIViewController<PapyrusTabViewControllerProtocol>* visibleTab in visibleTabs) {
         [self setTabImageNamed:[visibleTab getTabIconFileName] withCaption:[visibleTab getTabCaption] andTag:[visibleTab getPosition] toViewController:visibleTab];
         [[visibleTab tabBarItem] setEnabled:[visibleTab tabVisiblityStatus] == TabVisibleStatusSelectable];
     }
-    
-    self.title = [(UIViewController<TabViewControllerProtocol>*)self.selectedViewController getTabCaption];
-
     self.viewControllers = [NSArray arrayWithArray:visibleTabs];
+    
+    if ([viewControllers count] > 0)
+        [self setSelectedViewController:[visibleTabs objectAtIndex:0]];
 }
 
 
@@ -75,7 +75,7 @@
 -(void)setSelectedViewController:(UIViewController *)selectedViewController {
     [super setSelectedViewController:selectedViewController];
     if (changeTitleToTabName) {
-        self.title = [(UIViewController<TabViewControllerProtocol>*)selectedViewController getTabCaption];
+        self.title = [(UIViewController<PapyrusTabViewControllerProtocol>*)selectedViewController getTabCaption];
     }
 }
 

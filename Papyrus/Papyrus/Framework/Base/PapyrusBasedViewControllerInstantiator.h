@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ProtocolBasedViewControllerInstantiator : NSObject
+@interface PapyrusBasedViewControllerInstantiator : NSObject
 
 //Creates an array of view controllers that conforms to the protocols in protocols.
 

@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "TabViewControllerProtocol.h"
+#import "PapyrusTabViewControllerProtocol.h"
 
-@protocol MainTabbedContainerProtocol <TabViewControllerProtocol>
+@protocol MainTabbedContainerProtocol <PapyrusTabViewControllerProtocol>
 
 @end

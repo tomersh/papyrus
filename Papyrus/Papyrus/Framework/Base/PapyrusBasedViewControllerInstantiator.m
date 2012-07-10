@@ -6,11 +6,11 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "ProtocolBasedViewControllerInstantiator.h"
+#import "PapyrusBasedViewControllerInstantiator.h"
 #import "ProtocolLocator.h"
-#import "ProtocolBasedViewControllerProtocol.h"
+#import "PapyrusBasedViewControllerProtocol.h"
 
-@interface ProtocolBasedViewControllerInstantiator ()
+@interface PapyrusBasedViewControllerInstantiator ()
 
 +(NSMutableSet*) fetchProtocols:(NSArray*) protocols;
 +(NSMutableArray*) CreateViewControllerInstances:(NSMutableSet*) setOfClasses;
@@ -18,17 +18,17 @@
 
 @end
 
-@implementation ProtocolBasedViewControllerInstantiator
+@implementation PapyrusBasedViewControllerInstantiator
 
 +(NSMutableArray*) InstantiateViewControllersOfType:(NSArray*) protocols {
     
     if (protocols == nil) return [[[NSMutableArray alloc] init] autorelease];
     
-    NSMutableSet* protocolImplementingClasses = [ProtocolBasedViewControllerInstantiator fetchProtocols:protocols];
+    NSMutableSet* protocolImplementingClasses = [PapyrusBasedViewControllerInstantiator fetchProtocols:protocols];
     
-    NSMutableArray* viewControllersInstances = [[ProtocolBasedViewControllerInstantiator CreateViewControllerInstances:protocolImplementingClasses] retain];
+    NSMutableArray* viewControllersInstances = [[PapyrusBasedViewControllerInstantiator CreateViewControllerInstances:protocolImplementingClasses] retain];
     
-    [ProtocolBasedViewControllerInstantiator arrangeViewControllersPosition:viewControllersInstances];
+    [PapyrusBasedViewControllerInstantiator arrangeViewControllersPosition:viewControllersInstances];
     
     return [viewControllersInstances autorelease];
 }
@@ -59,8 +59,8 @@
 +(void) arrangeViewControllersPosition:(NSMutableArray*) viewControllers {
     if (viewControllers == nil) return;
     [viewControllers sortUsingComparator:^NSComparisonResult(id vc1, id vc2) {
-        int vc1Pos = [(NSObject<ProtocolBasedViewControllerProtocol>*)vc1 getPosition];
-        int vc2Pos = [(NSObject<ProtocolBasedViewControllerProtocol>*)vc2 getPosition];
+        int vc1Pos = [(NSObject<PapyrusBasedViewControllerProtocol>*)vc1 getPosition];
+        int vc2Pos = [(NSObject<PapyrusBasedViewControllerProtocol>*)vc2 getPosition];
         return vc1Pos < vc2Pos ? NSOrderedAscending : NSOrderedDescending;
     }];
 }

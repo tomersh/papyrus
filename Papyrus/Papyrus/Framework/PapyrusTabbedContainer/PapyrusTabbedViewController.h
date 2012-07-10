@@ -7,9 +7,9 @@
 //
 
 
-#import "TabViewControllerProtocol.h"
+#import "PapyrusTabbedViewController.h"
 
-@interface GenericTabbedViewController : UITabBarController {
+@interface PapyrusTabbedViewController : UITabBarController {
     
     NSArray* viewControllers;
     BOOL changeTitleToTabName;

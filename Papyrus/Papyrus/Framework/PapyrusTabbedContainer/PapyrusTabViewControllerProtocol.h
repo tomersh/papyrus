@@ -1,5 +1,5 @@
 //
-//  TabViewProtocol.h
+//  PapyrusTabViewControllerProtocol.h
 //  Newsfeed
 //
 //  Created by Tomer shiri on 6/5/12.
@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ProtocolBasedViewControllerProtocol.h"
+#import "PapyrusBasedViewControllerProtocol.h"
 
 typedef enum TabVisiblityStatus {
     TabVisibleStatusSelectable = 1,     //tab is selectable
@@ -15,7 +15,7 @@ typedef enum TabVisiblityStatus {
     TabVisibleStatusNotShowen = 3   //tab is not showen
 }TabVisiblityStatus;
 
-@protocol TabViewControllerProtocol <ProtocolBasedViewControllerProtocol>
+@protocol PapyrusTabViewControllerProtocol <PapyrusBasedViewControllerProtocol>
 
 -(TabVisiblityStatus) tabVisiblityStatus;
 

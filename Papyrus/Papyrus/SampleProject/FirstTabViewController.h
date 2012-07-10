@@ -6,7 +6,6 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "GenericTabbedViewController.h"
 #import "MainTabbedContainerProtocol.h"
 
 @interface FirstTabViewController : UIViewController<MainTabbedContainerProtocol> {

@@ -12,20 +12,33 @@
 
 @synthesize window = _window;
 
+static BOOL showNavigationBar = YES;
+
 - (void)dealloc
 {
     [_window release];
     [super dealloc];
 }
 
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
-    self.window.backgroundColor = [UIColor whiteColor];
+    
     [self.window makeKeyAndVisible];
     MainTabbedViewController* mainTabbedViewController = [[MainTabbedViewController alloc] init];
-    self.window.rootViewController = mainTabbedViewController;
+    
+    if (showNavigationBar) {
+        UINavigationController* navigationController = [[UINavigationController alloc] initWithRootViewController:self.window.rootViewController];
+        self.window.rootViewController = navigationController;
+        [navigationController pushViewController:mainTabbedViewController animated:NO];
+        [navigationController release];
+    }
+    else {
+        self.window.rootViewController = mainTabbedViewController;
+    }
     [mainTabbedViewController release];
+    
     return YES;
 }
 

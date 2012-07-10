@@ -18,7 +18,7 @@
     self = [super init];
     if (!self) return self;
     view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 460)];
-    view.backgroundColor = [UIColor greenColor];
+    view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"papyrus.jpg"]];
     return self;
 }
 
