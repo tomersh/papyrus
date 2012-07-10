@@ -16,10 +16,15 @@
 		D85CF58115AB44CC002FE1BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85CF56715AB44CC002FE1BE /* UIKit.framework */; };
 		D85CF58215AB44CC002FE1BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85CF56915AB44CC002FE1BE /* Foundation.framework */; };
 		D85CF58A15AB44CC002FE1BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D85CF58815AB44CC002FE1BE /* InfoPlist.strings */; };
-		D85CF58D15AB44CC002FE1BE /* PapyrusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D85CF58C15AB44CC002FE1BE /* PapyrusTests.m */; };
+		D85CF58D15AB44CC002FE1BE /* ProtocolLocatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D85CF58C15AB44CC002FE1BE /* ProtocolLocatorTests.m */; };
 		D85CF59A15AB4518002FE1BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D85CF59915AB4518002FE1BE /* AppDelegate.m */; };
 		D85CF5AF15AB45A6002FE1BE /* ProtocolBasedViewControllerInstantiator.m in Sources */ = {isa = PBXBuildFile; fileRef = D85CF5AB15AB45A6002FE1BE /* ProtocolBasedViewControllerInstantiator.m */; };
 		D85CF5B015AB45A6002FE1BE /* ProtocolLocator.m in Sources */ = {isa = PBXBuildFile; fileRef = D85CF5AE15AB45A6002FE1BE /* ProtocolLocator.m */; };
+		D85CF5B315AB5463002FE1BE /* ProtocolBasedViewControllerInstantiatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D85CF5B215AB5463002FE1BE /* ProtocolBasedViewControllerInstantiatorTests.m */; };
+		D85CF5B815AB59DD002FE1BE /* GenericTabbedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D85CF5B615AB59DD002FE1BE /* GenericTabbedViewController.m */; };
+		D85CF5BB15AB6060002FE1BE /* MainTabbedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D85CF5BA15AB6060002FE1BE /* MainTabbedViewController.m */; };
+		D85CF5BF15AB6316002FE1BE /* FirstTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D85CF5BE15AB6316002FE1BE /* FirstTabViewController.m */; };
+		D85CF5C215AC1439002FE1BE /* SecondTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D85CF5C115AC1438002FE1BE /* SecondTabViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +50,8 @@
 		D85CF57F15AB44CC002FE1BE /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		D85CF58715AB44CC002FE1BE /* PapyrusTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PapyrusTests-Info.plist"; sourceTree = "<group>"; };
 		D85CF58915AB44CC002FE1BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D85CF58B15AB44CC002FE1BE /* PapyrusTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PapyrusTests.h; sourceTree = "<group>"; };
-		D85CF58C15AB44CC002FE1BE /* PapyrusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PapyrusTests.m; sourceTree = "<group>"; };
+		D85CF58B15AB44CC002FE1BE /* ProtocolLocatorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtocolLocatorTests.h; sourceTree = "<group>"; };
+		D85CF58C15AB44CC002FE1BE /* ProtocolLocatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProtocolLocatorTests.m; sourceTree = "<group>"; };
 		D85CF59815AB4518002FE1BE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D85CF59915AB4518002FE1BE /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D85CF5AA15AB45A6002FE1BE /* ProtocolBasedViewControllerInstantiator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolBasedViewControllerInstantiator.h; sourceTree = "<group>"; };
@@ -54,6 +59,18 @@
 		D85CF5AC15AB45A6002FE1BE /* ProtocolBasedViewControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolBasedViewControllerProtocol.h; sourceTree = "<group>"; };
 		D85CF5AD15AB45A6002FE1BE /* ProtocolLocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolLocator.h; sourceTree = "<group>"; };
 		D85CF5AE15AB45A6002FE1BE /* ProtocolLocator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtocolLocator.m; sourceTree = "<group>"; };
+		D85CF5B115AB5463002FE1BE /* ProtocolBasedViewControllerInstantiatorTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolBasedViewControllerInstantiatorTests.h; sourceTree = "<group>"; };
+		D85CF5B215AB5463002FE1BE /* ProtocolBasedViewControllerInstantiatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtocolBasedViewControllerInstantiatorTests.m; sourceTree = "<group>"; };
+		D85CF5B515AB59DD002FE1BE /* GenericTabbedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericTabbedViewController.h; sourceTree = "<group>"; };
+		D85CF5B615AB59DD002FE1BE /* GenericTabbedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenericTabbedViewController.m; sourceTree = "<group>"; };
+		D85CF5B715AB59DD002FE1BE /* TabViewControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabViewControllerProtocol.h; sourceTree = "<group>"; };
+		D85CF5B915AB6060002FE1BE /* MainTabbedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabbedViewController.h; sourceTree = "<group>"; };
+		D85CF5BA15AB6060002FE1BE /* MainTabbedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabbedViewController.m; sourceTree = "<group>"; };
+		D85CF5BC15AB62A0002FE1BE /* MainTabbedContainerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTabbedContainerProtocol.h; sourceTree = "<group>"; };
+		D85CF5BD15AB6315002FE1BE /* FirstTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; path = FirstTabViewController.h; sourceTree = "<group>"; };
+		D85CF5BE15AB6316002FE1BE /* FirstTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstTabViewController.m; sourceTree = "<group>"; };
+		D85CF5C015AC1438002FE1BE /* SecondTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondTabViewController.h; sourceTree = "<group>"; };
+		D85CF5C115AC1438002FE1BE /* SecondTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondTabViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,8 +151,10 @@
 		D85CF58515AB44CC002FE1BE /* PapyrusTests */ = {
 			isa = PBXGroup;
 			children = (
-				D85CF58B15AB44CC002FE1BE /* PapyrusTests.h */,
-				D85CF58C15AB44CC002FE1BE /* PapyrusTests.m */,
+				D85CF5B115AB5463002FE1BE /* ProtocolBasedViewControllerInstantiatorTests.h */,
+				D85CF5B215AB5463002FE1BE /* ProtocolBasedViewControllerInstantiatorTests.m */,
+				D85CF58B15AB44CC002FE1BE /* ProtocolLocatorTests.h */,
+				D85CF58C15AB44CC002FE1BE /* ProtocolLocatorTests.m */,
 				D85CF58615AB44CC002FE1BE /* Supporting Files */,
 			);
 			path = PapyrusTests;
@@ -153,6 +172,7 @@
 		D85CF59615AB44FA002FE1BE /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				D85CF5B415AB59BC002FE1BE /* TabbedContainer */,
 				D85CF5A215AB4591002FE1BE /* Base */,
 			);
 			path = Framework;
@@ -163,6 +183,13 @@
 			children = (
 				D85CF59815AB4518002FE1BE /* AppDelegate.h */,
 				D85CF59915AB4518002FE1BE /* AppDelegate.m */,
+				D85CF5B915AB6060002FE1BE /* MainTabbedViewController.h */,
+				D85CF5BA15AB6060002FE1BE /* MainTabbedViewController.m */,
+				D85CF5BC15AB62A0002FE1BE /* MainTabbedContainerProtocol.h */,
+				D85CF5BD15AB6315002FE1BE /* FirstTabViewController.h */,
+				D85CF5BE15AB6316002FE1BE /* FirstTabViewController.m */,
+				D85CF5C015AC1438002FE1BE /* SecondTabViewController.h */,
+				D85CF5C115AC1438002FE1BE /* SecondTabViewController.m */,
 			);
 			path = SampleProject;
 			sourceTree = "<group>";
@@ -177,6 +204,16 @@
 				D85CF5AE15AB45A6002FE1BE /* ProtocolLocator.m */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		D85CF5B415AB59BC002FE1BE /* TabbedContainer */ = {
+			isa = PBXGroup;
+			children = (
+				D85CF5B515AB59DD002FE1BE /* GenericTabbedViewController.h */,
+				D85CF5B615AB59DD002FE1BE /* GenericTabbedViewController.m */,
+				D85CF5B715AB59DD002FE1BE /* TabViewControllerProtocol.h */,
+			);
+			path = TabbedContainer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +325,10 @@
 				D85CF59A15AB4518002FE1BE /* AppDelegate.m in Sources */,
 				D85CF5AF15AB45A6002FE1BE /* ProtocolBasedViewControllerInstantiator.m in Sources */,
 				D85CF5B015AB45A6002FE1BE /* ProtocolLocator.m in Sources */,
+				D85CF5B815AB59DD002FE1BE /* GenericTabbedViewController.m in Sources */,
+				D85CF5BB15AB6060002FE1BE /* MainTabbedViewController.m in Sources */,
+				D85CF5BF15AB6316002FE1BE /* FirstTabViewController.m in Sources */,
+				D85CF5C215AC1439002FE1BE /* SecondTabViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +336,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D85CF58D15AB44CC002FE1BE /* PapyrusTests.m in Sources */,
+				D85CF58D15AB44CC002FE1BE /* ProtocolLocatorTests.m in Sources */,
+				D85CF5B315AB5463002FE1BE /* ProtocolBasedViewControllerInstantiatorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

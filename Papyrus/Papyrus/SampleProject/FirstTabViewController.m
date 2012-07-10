@@ -1,21 +1,30 @@
 //
-//  FirstTab.m
+//  FirstTabViewController.m
 //  Papyrus
 //
 //  Created by Tomer shiri on 7/9/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "FirstTab.h"
+#import "FirstTabViewController.h"
 
-@interface FirstTab ()
+@interface FirstTabViewController ()
 
 @end
 
-@implementation FirstTab
+@implementation FirstTabViewController
+
+-(id)init {
+    self = [super init];
+    if (!self) return self;
+    view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 460)];
+    view.backgroundColor = [UIColor greenColor];
+    return self;
+}
 
 -(void)loadView {
-    self.view.backgroundColor = [UIColor greenColor];
+    [super loadView];
+    [self.view addSubview:view];
 }
 
 -(int)getPosition {
@@ -31,6 +40,11 @@
 }
 -(NSString*) getTabIconFileName {
     return @"icon";
+}
+
+-(void)dealloc {
+    [view release];
+    [super dealloc];
 }
 
 @end

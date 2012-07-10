@@ -6,8 +6,8 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <SenTestingKit/SenTestingKit.h>
 
-@interface ProtocolBasedViewControllerInstantiatorTests : SecuredAuthenticatedPostRequest
+@interface ProtocolBasedViewControllerInstantiatorTests : SenTestCase
 
 @end

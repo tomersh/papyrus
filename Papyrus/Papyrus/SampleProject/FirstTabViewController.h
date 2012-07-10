@@ -1,5 +1,5 @@
 //
-//  FirstTab.h
+//  FirstTabViewController.h
 //  Papyrus
 //
 //  Created by Tomer shiri on 7/9/12.
@@ -9,6 +9,8 @@
 #import "GenericTabbedViewController.h"
 #import "MainTabbedContainerProtocol.h"
 
-@interface FirstTab : UIViewController<MainTabbedContainerProtocol>
+@interface FirstTabViewController : UIViewController<MainTabbedContainerProtocol> {
+    UIView* view;
+}
 
 @end

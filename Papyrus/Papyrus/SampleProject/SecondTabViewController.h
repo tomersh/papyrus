@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MainTabbedContainerProtocol.h"
 
-@interface SecondTabViewController : UIViewController
+@interface SecondTabViewController : UIViewController<MainTabbedContainerProtocol> {
+    UIView* view;
+}
 
 @end

@@ -27,7 +27,7 @@ static int allClassCount;
         if (class_conformsToProtocol(allClassesMemoization[i],protocol))
             [result addObject:allClassesMemoization[i]];
     }
-    return result;
+    return [[[NSArray alloc] initWithArray:result] autorelease];
 }
 
 @end

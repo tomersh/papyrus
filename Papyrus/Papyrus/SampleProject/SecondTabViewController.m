@@ -14,30 +14,37 @@
 
 @implementation SecondTabViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
+-(id)init {
+    self = [super init];
+    if (!self) return self;
+    view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 460)];
+    view.backgroundColor = [UIColor blueColor];
     return self;
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view.
+-(void)loadView {
+    [super loadView];
+    [self.view addSubview:view];
 }
 
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
+-(int)getPosition {
+    return 0;
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+-(TabVisiblityStatus) tabVisiblityStatus {
+    return TabVisibleStatusSelectable;
+}
+
+-(NSString*) getTabCaption {
+    return @"Second Tab";
+}
+-(NSString*) getTabIconFileName {
+    return @"icon";
+}
+
+-(void)dealloc {
+    [view release];
+    [super dealloc];
 }
 
 @end

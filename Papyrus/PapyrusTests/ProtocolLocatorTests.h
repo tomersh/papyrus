@@ -7,7 +7,8 @@
 //
 
 #import <SenTestingKit/SenTestingKit.h>
+#import "ProtocolLocator.h"
 
-@interface PapyrusTests : SenTestCase
+@interface ProtocolLocatorTests : SenTestCase
 
 @end
