@@ -12,6 +12,6 @@
 
 //Creates an array of view controllers that conforms to the protocols in protocols.
 
-+(NSMutableArray*) InstantiateViewControllersOfType:(NSArray*) protocols;
++(NSMutableArray*) instantiateViewControllersOfType:(NSArray*) protocols;
 
 @end

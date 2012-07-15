@@ -32,7 +32,7 @@
     
     changeTitleToTabName = YES;
 
-    viewControllers = [[PapyrusBasedViewControllerInstantiator InstantiateViewControllersOfType:protocols] retain];
+    viewControllers = [[PapyrusBasedViewControllerInstantiator instantiateViewControllersOfType:protocols] retain];
 	
     for (UIViewController<PapyrusBasedViewControllerProtocol>* viewController in self.viewControllers) {
         if ([viewController respondsToSelector:@selector(registerForStatusChangeEvent:andSelector:)]) {
@@ -59,7 +59,7 @@
         [self setTabImageNamed:[visibleTab getTabIconFileName] withCaption:[visibleTab getTabCaption] andTag:[visibleTab getPosition] toViewController:visibleTab];
         [[visibleTab tabBarItem] setEnabled:[visibleTab tabVisiblityStatus] == TabVisibleStatusSelectable];
     }
-    self.viewControllers = [NSArray arrayWithArray:visibleTabs];
+    self.viewControllers = visibleTabs;
     
     if ([viewControllers count] > 0)
         [self setSelectedViewController:[visibleTabs objectAtIndex:0]];

@@ -17,7 +17,6 @@
 
 @property (nonatomic,assign) BOOL changeTitleToTabName;
 
-
 - (id)initWithTabType:(Protocol*) protocol;
 - (id)initWithTabTypes:(NSArray*) protocols;
 

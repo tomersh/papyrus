@@ -13,20 +13,20 @@
 @interface PapyrusBasedViewControllerInstantiator ()
 
 +(NSMutableSet*) fetchProtocols:(NSArray*) protocols;
-+(NSMutableArray*) CreateViewControllerInstances:(NSMutableSet*) setOfClasses;
++(NSMutableArray*) createViewControllerInstances:(NSMutableSet*) setOfClasses;
 +(void) arrangeViewControllersPosition:(NSMutableArray*) viewControllers;
 
 @end
 
 @implementation PapyrusBasedViewControllerInstantiator
 
-+(NSMutableArray*) InstantiateViewControllersOfType:(NSArray*) protocols {
++(NSMutableArray*) instantiateViewControllersOfType:(NSArray*) protocols {
     
     if (protocols == nil) return [[[NSMutableArray alloc] init] autorelease];
     
     NSMutableSet* protocolImplementingClasses = [PapyrusBasedViewControllerInstantiator fetchProtocols:protocols];
     
-    NSMutableArray* viewControllersInstances = [[PapyrusBasedViewControllerInstantiator CreateViewControllerInstances:protocolImplementingClasses] retain];
+    NSMutableArray* viewControllersInstances = [[PapyrusBasedViewControllerInstantiator createViewControllerInstances:protocolImplementingClasses] retain];
     
     [PapyrusBasedViewControllerInstantiator arrangeViewControllersPosition:viewControllersInstances];
     
@@ -43,7 +43,7 @@
     return [controllers autorelease];
 }
 
-+(NSMutableArray*) CreateViewControllerInstances:(NSMutableSet*) setOfClasses {
++(NSMutableArray*) createViewControllerInstances:(NSMutableSet*) setOfClasses {
     if (setOfClasses == nil) return [[[NSMutableArray alloc] init] autorelease];
     NSMutableArray* viewControllers = [[NSMutableArray alloc] initWithCapacity:[setOfClasses count]];
     for (Class viewControllerClazz in setOfClasses) {
