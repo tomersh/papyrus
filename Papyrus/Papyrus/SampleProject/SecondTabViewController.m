@@ -39,7 +39,7 @@
     return @"Second Tab";
 }
 -(NSString*) getTabIconFileName {
-    return @"icon";
+    return @"chicken";
 }
 
 -(void)dealloc {

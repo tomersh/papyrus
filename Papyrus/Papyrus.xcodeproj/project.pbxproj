@@ -33,6 +33,9 @@
 		D85CF63215B2ED0A002FE1BE /* ViewForScrollviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = D85CF63115B2ED0A002FE1BE /* ViewForScrollviewView.m */; };
 		D85CF63515B2F85B002FE1BE /* FirstScrolledViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D85CF63415B2F85A002FE1BE /* FirstScrolledViewController.m */; };
 		D85CF63815B2FA51002FE1BE /* SecondScrolledViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D85CF63715B2FA51002FE1BE /* SecondScrolledViewController.m */; };
+		D85CF63C15B309AE002FE1BE /* chicken.png in Resources */ = {isa = PBXBuildFile; fileRef = D85CF63915B309AE002FE1BE /* chicken.png */; };
+		D85CF63D15B309AE002FE1BE /* dog-paw.png in Resources */ = {isa = PBXBuildFile; fileRef = D85CF63A15B309AE002FE1BE /* dog-paw.png */; };
+		D85CF63E15B309AE002FE1BE /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = D85CF63B15B309AE002FE1BE /* star.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +99,9 @@
 		D85CF63415B2F85A002FE1BE /* FirstScrolledViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstScrolledViewController.m; sourceTree = "<group>"; };
 		D85CF63615B2FA51002FE1BE /* SecondScrolledViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondScrolledViewController.h; sourceTree = "<group>"; };
 		D85CF63715B2FA51002FE1BE /* SecondScrolledViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondScrolledViewController.m; sourceTree = "<group>"; };
+		D85CF63915B309AE002FE1BE /* chicken.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chicken.png; sourceTree = "<group>"; };
+		D85CF63A15B309AE002FE1BE /* dog-paw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dog-paw.png"; sourceTree = "<group>"; };
+		D85CF63B15B309AE002FE1BE /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +252,9 @@
 		D85CF5C615AC286C002FE1BE /* images */ = {
 			isa = PBXGroup;
 			children = (
+				D85CF63915B309AE002FE1BE /* chicken.png */,
+				D85CF63A15B309AE002FE1BE /* dog-paw.png */,
+				D85CF63B15B309AE002FE1BE /* star.png */,
 				D85CF5C915AC2BD5002FE1BE /* papyrus.jpg */,
 				D85CF5C715AC286C002FE1BE /* papyrus@2x.jpg */,
 			);
@@ -267,16 +276,16 @@
 		D85CF62415B2ECBC002FE1BE /* FirstTab */ = {
 			isa = PBXGroup;
 			children = (
+				D85CF62815B2ECBD002FE1BE /* scrollviewControllers */,
 				D85CF62E15B2ED0A002FE1BE /* viewForScrollView */,
 				D85CF62515B2ECBD002FE1BE /* FirstTabScrolledViewComponent.h */,
 				D85CF62615B2ECBD002FE1BE /* FirstTabViewController.h */,
 				D85CF62715B2ECBD002FE1BE /* FirstTabViewController.m */,
-				D85CF62815B2ECBD002FE1BE /* scrollviewController */,
 			);
 			path = FirstTab;
 			sourceTree = "<group>";
 		};
-		D85CF62815B2ECBD002FE1BE /* scrollviewController */ = {
+		D85CF62815B2ECBD002FE1BE /* scrollviewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				D85CF62915B2ECBD002FE1BE /* ScrolledViewViewControllerBase.h */,
@@ -286,6 +295,7 @@
 				D85CF63615B2FA51002FE1BE /* SecondScrolledViewController.h */,
 				D85CF63715B2FA51002FE1BE /* SecondScrolledViewController.m */,
 			);
+			name = scrollviewControllers;
 			path = scrollviewController;
 			sourceTree = "<group>";
 		};
@@ -372,6 +382,9 @@
 				D85CF57215AB44CC002FE1BE /* InfoPlist.strings in Resources */,
 				D85CF5C815AC286C002FE1BE /* papyrus@2x.jpg in Resources */,
 				D85CF5CA15AC2BD5002FE1BE /* papyrus.jpg in Resources */,
+				D85CF63C15B309AE002FE1BE /* chicken.png in Resources */,
+				D85CF63D15B309AE002FE1BE /* dog-paw.png in Resources */,
+				D85CF63E15B309AE002FE1BE /* star.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

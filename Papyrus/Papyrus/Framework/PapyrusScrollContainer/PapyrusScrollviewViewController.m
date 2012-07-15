@@ -19,29 +19,29 @@
 
 @synthesize viewControllers;
 
--(id) initWithBoxViewProtocol:(Protocol*) _boxViewProtocol andStyle:(GenericBoxedViewStyle) style {
-    self = [self initWithBoxViewProtocols:[NSArray arrayWithObject:_boxViewProtocol] andStyle:style];
+-(id) initWithPapyrusScrollviewViewProtocol:(Protocol*) papyrusScrollviewViewProtocol andStyle:(GenericBoxedViewStyle) style {
+    self = [self initWithPapyrusScrollviewViewProtocols:[NSArray arrayWithObject:papyrusScrollviewViewProtocol] andStyle:style];
     return self;
 }
 
 
--(id) initWithBoxViewProtocol:(Protocol*) boxViewProtocol {
-    self = [self initWithBoxViewProtocols:[NSArray arrayWithObject:boxViewProtocol]];
+-(id) initWithPapyrusScrollviewViewProtocol:(Protocol*) papyrusScrollviewViewProtocol {
+    self = [self initWithPapyrusScrollviewViewProtocols:[NSArray arrayWithObject:papyrusScrollviewViewProtocol]];
     return self;
     
 }
 
--(id) initWithBoxViewProtocols:(NSArray*) _boxViewProtocols {
-    self = [self initWithBoxViewProtocols:_boxViewProtocols andStyle:GenericBoxedViewStylePlain];
+-(id) initWithPapyrusScrollviewViewProtocols:(NSArray*) papyrusScrollviewViewProtocols {
+    self = [self initWithPapyrusScrollviewViewProtocols:papyrusScrollviewViewProtocols andStyle:GenericBoxedViewStylePlain];
     return self;
 }
 
--(id) initWithBoxViewProtocols:(NSArray*) _boxViewProtocols andStyle:(GenericBoxedViewStyle) style {
+-(id) initWithPapyrusScrollviewViewProtocols:(NSArray*) papyrusScrollviewViewProtocols andStyle:(GenericBoxedViewStyle) style {
     self = [super init];
     if (!self) return self;
     activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     [activityIndicator startAnimating];
-    [self loadViewsOfTypes:_boxViewProtocols withStyle:style];
+    [self loadViewsOfTypes:papyrusScrollviewViewProtocols withStyle:style];
     return self;
 }
 

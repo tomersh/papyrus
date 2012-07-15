@@ -10,9 +10,4 @@
 
 @implementation FirstScrolledViewController
 
--(void) setText:(NSString*) text {
-    [super setText:@"First UIView"];
-}
-
-
 @end

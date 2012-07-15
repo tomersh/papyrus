@@ -25,11 +25,11 @@ typedef enum GenericBoxedViewStyle {
 @property (nonatomic) int padding;
 @property (nonatomic,retain) NSMutableArray* viewControllers;
 
--(id) initWithBoxViewProtocol:(Protocol*) _boxViewProtocol andStyle:(GenericBoxedViewStyle) style;
--(id) initWithBoxViewProtocols:(NSArray*) _boxViewProtocol andStyle:(GenericBoxedViewStyle) style;
+-(id) initWithPapyrusScrollviewViewProtocol:(Protocol*) papyrusScrollviewViewProtocol andStyle:(GenericBoxedViewStyle) style;
+-(id) initWithPapyrusScrollviewViewProtocols:(NSArray*) papyrusScrollviewViewProtocols andStyle:(GenericBoxedViewStyle) style;
 
--(id) initWithBoxViewProtocol:(Protocol*) _boxViewProtocol;
--(id) initWithBoxViewProtocols:(NSArray*) _boxViewProtocol;
+-(id) initWithPapyrusScrollviewViewProtocol:(Protocol*) papyrusScrollviewViewProtocol;
+-(id) initWithPapyrusScrollviewViewProtocols:(NSArray*) papyrusScrollviewViewProtocols;
 
 -(NSMutableArray*) getViewControllers;
 -(void) refresh;

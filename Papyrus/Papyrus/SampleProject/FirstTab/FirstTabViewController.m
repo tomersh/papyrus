@@ -18,7 +18,7 @@
 @implementation FirstTabViewController
 
 -(id)init {
-    self = [super initWithBoxViewProtocol:@protocol(ViewForScrollviewProtocol) andStyle:GenericBoxedViewStyleTabbed];
+    self = [super initWithPapyrusScrollviewViewProtocol:@protocol(ViewForScrollviewProtocol) andStyle:GenericBoxedViewStyleTabbed];
     if (!self) return self;
     self.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"papyrus.jpg"]];
     int i = 1;
@@ -45,7 +45,7 @@
     return @"First Tab";
 }
 -(NSString*) getTabIconFileName {
-    return @"icon";
+    return @"dog-paw";
 }
 
 +(NSString*) numberToWord:(int) number {

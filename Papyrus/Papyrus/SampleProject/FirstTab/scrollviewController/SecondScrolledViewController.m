@@ -10,8 +10,5 @@
 
 @implementation SecondScrolledViewController
 
--(void) setText:(NSString*) text {
-    [super setText:@"Second UIView"];
-}
 
 @end
