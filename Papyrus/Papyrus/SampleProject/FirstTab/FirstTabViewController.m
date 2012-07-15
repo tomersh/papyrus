@@ -57,8 +57,4 @@
     return numberString;
 }
 
--(void)dealloc {
-    [super dealloc];
-}
-
 @end

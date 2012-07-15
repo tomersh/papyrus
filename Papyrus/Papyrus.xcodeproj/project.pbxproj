@@ -23,14 +23,14 @@
 		D85CF5D215AC2E78002FE1BE /* PapyrusTabbedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D85CF5D015AC2E78002FE1BE /* PapyrusTabbedViewController.m */; };
 		D85CF61A15AC3319002FE1BE /* PapyrusScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D85CF61715AC3319002FE1BE /* PapyrusScrollView.m */; };
 		D85CF61B15AC3319002FE1BE /* PapyrusScrollviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D85CF61915AC3319002FE1BE /* PapyrusScrollviewViewController.m */; };
-		D85CF67215B30C6D002FE1BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D85CF66915B30C6D002FE1BE /* AppDelegate.m */; };
-		D85CF67315B30C6D002FE1BE /* SecondTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D85CF66D15B30C6D002FE1BE /* SecondTabViewController.m */; };
-		D85CF67415B30C6D002FE1BE /* MainTabbedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D85CF67115B30C6D002FE1BE /* MainTabbedViewController.m */; };
 		D85CF69D15B31032002FE1BE /* FirstTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D85CF69115B31032002FE1BE /* FirstTabViewController.m */; };
 		D85CF69E15B31032002FE1BE /* FirstScrolledViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D85CF69415B31032002FE1BE /* FirstScrolledViewController.m */; };
 		D85CF69F15B31032002FE1BE /* ScrolledViewViewControllerBase.m in Sources */ = {isa = PBXBuildFile; fileRef = D85CF69615B31032002FE1BE /* ScrolledViewViewControllerBase.m */; };
 		D85CF6A015B31032002FE1BE /* SecondScrolledViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D85CF69815B31032002FE1BE /* SecondScrolledViewController.m */; };
 		D85CF6A115B31032002FE1BE /* ViewForScrollviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = D85CF69C15B31032002FE1BE /* ViewForScrollviewView.m */; };
+		D85CF6A915B312F2002FE1BE /* SecondTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D85CF6A415B312F2002FE1BE /* SecondTabViewController.m */; };
+		D85CF6AA15B312F2002FE1BE /* MainTabbedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D85CF6A815B312F2002FE1BE /* MainTabbedViewController.m */; };
+		D85CF6AD15B31313002FE1BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D85CF6AC15B31313002FE1BE /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D85CF56315AB44CC002FE1BE /* Papyrus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Papyrus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D85CF56315AB44CC002FE1BE /* Papyrus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Papyrus.app; path = "/Users/itunes/Documents/papyrus/Papyrus/build/Release-iphoneos/Papyrus.app"; sourceTree = "<absolute>"; };
 		D85CF56715AB44CC002FE1BE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D85CF56915AB44CC002FE1BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D85CF56B15AB44CC002FE1BE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -52,7 +52,7 @@
 		D85CF57115AB44CC002FE1BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D85CF57315AB44CC002FE1BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D85CF57515AB44CC002FE1BE /* Papyrus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Papyrus-Prefix.pch"; sourceTree = "<group>"; };
-		D85CF57E15AB44CC002FE1BE /* PapyrusTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PapyrusTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D85CF57E15AB44CC002FE1BE /* PapyrusTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = PapyrusTests.octest; path = "/Users/itunes/Documents/papyrus/Papyrus/build/Release-iphoneos/PapyrusTests.octest"; sourceTree = "<absolute>"; };
 		D85CF57F15AB44CC002FE1BE /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		D85CF58715AB44CC002FE1BE /* PapyrusTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PapyrusTests-Info.plist"; sourceTree = "<group>"; };
 		D85CF58915AB44CC002FE1BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -73,13 +73,6 @@
 		D85CF61715AC3319002FE1BE /* PapyrusScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PapyrusScrollView.m; sourceTree = "<group>"; };
 		D85CF61815AC3319002FE1BE /* PapyrusScrollviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PapyrusScrollviewViewController.h; sourceTree = "<group>"; };
 		D85CF61915AC3319002FE1BE /* PapyrusScrollviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PapyrusScrollviewViewController.m; sourceTree = "<group>"; };
-		D85CF66815B30C6D002FE1BE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		D85CF66915B30C6D002FE1BE /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D85CF66C15B30C6D002FE1BE /* SecondTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondTabViewController.h; sourceTree = "<group>"; };
-		D85CF66D15B30C6D002FE1BE /* SecondTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondTabViewController.m; sourceTree = "<group>"; };
-		D85CF66F15B30C6D002FE1BE /* MainTabbedContainerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabbedContainerProtocol.h; sourceTree = "<group>"; };
-		D85CF67015B30C6D002FE1BE /* MainTabbedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabbedViewController.h; sourceTree = "<group>"; };
-		D85CF67115B30C6D002FE1BE /* MainTabbedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabbedViewController.m; sourceTree = "<group>"; };
 		D85CF68F15B31032002FE1BE /* FirstTabScrolledViewComponentProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstTabScrolledViewComponentProtocol.h; sourceTree = "<group>"; };
 		D85CF69015B31032002FE1BE /* FirstTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstTabViewController.h; sourceTree = "<group>"; };
 		D85CF69115B31032002FE1BE /* FirstTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstTabViewController.m; sourceTree = "<group>"; };
@@ -92,6 +85,13 @@
 		D85CF69A15B31032002FE1BE /* ViewForScrollviewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewForScrollviewProtocol.h; sourceTree = "<group>"; };
 		D85CF69B15B31032002FE1BE /* ViewForScrollviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewForScrollviewView.h; sourceTree = "<group>"; };
 		D85CF69C15B31032002FE1BE /* ViewForScrollviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewForScrollviewView.m; sourceTree = "<group>"; };
+		D85CF6A315B312F2002FE1BE /* SecondTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondTabViewController.h; sourceTree = "<group>"; };
+		D85CF6A415B312F2002FE1BE /* SecondTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondTabViewController.m; sourceTree = "<group>"; };
+		D85CF6A615B312F2002FE1BE /* MainTabbedContainerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabbedContainerProtocol.h; sourceTree = "<group>"; };
+		D85CF6A715B312F2002FE1BE /* MainTabbedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabbedViewController.h; sourceTree = "<group>"; };
+		D85CF6A815B312F2002FE1BE /* MainTabbedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabbedViewController.m; sourceTree = "<group>"; };
+		D85CF6AB15B31313002FE1BE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Framework/SampleProject/AppDelegate.h; sourceTree = "<group>"; };
+		D85CF6AC15B31313002FE1BE /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Framework/SampleProject/AppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,17 +124,7 @@
 				D85CF56D15AB44CC002FE1BE /* Papyrus */,
 				D85CF58515AB44CC002FE1BE /* PapyrusTests */,
 				D85CF56615AB44CC002FE1BE /* Frameworks */,
-				D85CF56415AB44CC002FE1BE /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		D85CF56415AB44CC002FE1BE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D85CF56315AB44CC002FE1BE /* Papyrus.app */,
-				D85CF57E15AB44CC002FE1BE /* PapyrusTests.octest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		D85CF56615AB44CC002FE1BE /* Frameworks */ = {
@@ -151,9 +141,9 @@
 		D85CF56D15AB44CC002FE1BE /* Papyrus */ = {
 			isa = PBXGroup;
 			children = (
+				D85CF56E15AB44CC002FE1BE /* Supporting Files */,
 				D85CF66715B30C6C002FE1BE /* SampleProject */,
 				D85CF59615AB44FA002FE1BE /* Framework */,
-				D85CF56E15AB44CC002FE1BE /* Supporting Files */,
 			);
 			path = Papyrus;
 			sourceTree = "<group>";
@@ -161,6 +151,8 @@
 		D85CF56E15AB44CC002FE1BE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D85CF6AB15B31313002FE1BE /* AppDelegate.h */,
+				D85CF6AC15B31313002FE1BE /* AppDelegate.m */,
 				D85CF56F15AB44CC002FE1BE /* Papyrus-Info.plist */,
 				D85CF57015AB44CC002FE1BE /* InfoPlist.strings */,
 				D85CF57315AB44CC002FE1BE /* main.m */,
@@ -238,12 +230,10 @@
 		D85CF66715B30C6C002FE1BE /* SampleProject */ = {
 			isa = PBXGroup;
 			children = (
-				D85CF66A15B30C6D002FE1BE /* images */,
-				D85CF66815B30C6D002FE1BE /* AppDelegate.h */,
-				D85CF66915B30C6D002FE1BE /* AppDelegate.m */,
 				D85CF68E15B31032002FE1BE /* FirstTab */,
-				D85CF66B15B30C6D002FE1BE /* SecondTab */,
-				D85CF66E15B30C6D002FE1BE /* TabsContainer */,
+				D85CF6A215B312F2002FE1BE /* SecondTab */,
+				D85CF6A515B312F2002FE1BE /* TabsContainer */,
+				D85CF66A15B30C6D002FE1BE /* images */,
 			);
 			name = SampleProject;
 			path = Framework/SampleProject;
@@ -254,25 +244,6 @@
 			children = (
 			);
 			path = images;
-			sourceTree = "<group>";
-		};
-		D85CF66B15B30C6D002FE1BE /* SecondTab */ = {
-			isa = PBXGroup;
-			children = (
-				D85CF66C15B30C6D002FE1BE /* SecondTabViewController.h */,
-				D85CF66D15B30C6D002FE1BE /* SecondTabViewController.m */,
-			);
-			path = SecondTab;
-			sourceTree = "<group>";
-		};
-		D85CF66E15B30C6D002FE1BE /* TabsContainer */ = {
-			isa = PBXGroup;
-			children = (
-				D85CF66F15B30C6D002FE1BE /* MainTabbedContainerProtocol.h */,
-				D85CF67015B30C6D002FE1BE /* MainTabbedViewController.h */,
-				D85CF67115B30C6D002FE1BE /* MainTabbedViewController.m */,
-			);
-			path = TabsContainer;
 			sourceTree = "<group>";
 		};
 		D85CF68E15B31032002FE1BE /* FirstTab */ = {
@@ -309,6 +280,25 @@
 				D85CF69C15B31032002FE1BE /* ViewForScrollviewView.m */,
 			);
 			path = viewForScrollView;
+			sourceTree = "<group>";
+		};
+		D85CF6A215B312F2002FE1BE /* SecondTab */ = {
+			isa = PBXGroup;
+			children = (
+				D85CF6A315B312F2002FE1BE /* SecondTabViewController.h */,
+				D85CF6A415B312F2002FE1BE /* SecondTabViewController.m */,
+			);
+			path = SecondTab;
+			sourceTree = "<group>";
+		};
+		D85CF6A515B312F2002FE1BE /* TabsContainer */ = {
+			isa = PBXGroup;
+			children = (
+				D85CF6A615B312F2002FE1BE /* MainTabbedContainerProtocol.h */,
+				D85CF6A715B312F2002FE1BE /* MainTabbedViewController.h */,
+				D85CF6A815B312F2002FE1BE /* MainTabbedViewController.m */,
+			);
+			path = TabsContainer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,7 +356,7 @@
 				en,
 			);
 			mainGroup = D85CF55815AB44CC002FE1BE;
-			productRefGroup = D85CF56415AB44CC002FE1BE /* Products */;
+			productRefGroup = D85CF55815AB44CC002FE1BE;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -422,14 +412,14 @@
 				D85CF5D215AC2E78002FE1BE /* PapyrusTabbedViewController.m in Sources */,
 				D85CF61A15AC3319002FE1BE /* PapyrusScrollView.m in Sources */,
 				D85CF61B15AC3319002FE1BE /* PapyrusScrollviewViewController.m in Sources */,
-				D85CF67215B30C6D002FE1BE /* AppDelegate.m in Sources */,
-				D85CF67315B30C6D002FE1BE /* SecondTabViewController.m in Sources */,
-				D85CF67415B30C6D002FE1BE /* MainTabbedViewController.m in Sources */,
 				D85CF69D15B31032002FE1BE /* FirstTabViewController.m in Sources */,
 				D85CF69E15B31032002FE1BE /* FirstScrolledViewController.m in Sources */,
 				D85CF69F15B31032002FE1BE /* ScrolledViewViewControllerBase.m in Sources */,
 				D85CF6A015B31032002FE1BE /* SecondScrolledViewController.m in Sources */,
 				D85CF6A115B31032002FE1BE /* ViewForScrollviewView.m in Sources */,
+				D85CF6A915B312F2002FE1BE /* SecondTabViewController.m in Sources */,
+				D85CF6AA15B312F2002FE1BE /* MainTabbedViewController.m in Sources */,
+				D85CF6AD15B31313002FE1BE /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
