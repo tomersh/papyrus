@@ -7,11 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "PapyrusScrollviewViewProtocol.h"
 
-@protocol FirstTabScrolledViewComponentProtocol <PapyrusScrollviewViewProtocol>
-
-
--(void) setText:(NSString*) text;
+@protocol FirstTabScrolledViewComponentProtocol <NSObject>
 
 @end
